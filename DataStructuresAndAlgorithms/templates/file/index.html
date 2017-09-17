@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+
+{% load staticfiles %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Data Structures and Algorithms</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'style.css' %}" />
+</head>
+<body>
+<div id="container">
+	<div id="intro">
+		<div id="pageHeader">
+			<h1><span style="padding-right:10px;">Data Structures and Algorithms</span></h1>
+		</div>
+			<nav id ="top_menu">
+			<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">Basic datastructures</a>
+					<div class="dropdown-content">
+					  <a href="#">Link 1</a>
+					  <a href="#">Link 2</a>
+					  <a href="#">Link 3</a>
+					</div>
+					</li>
+					<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">Linked lists</a>
+					<div class="dropdown-content">
+					  <a href="#">Link 1</a>
+					  <a href="#">Link 2</a>
+					  <a href="#">Link 3</a>
+					</div>
+					</li>
+					<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">Trees</a>
+					<div class="dropdown-content">
+					  <a href="#">Link 1</a>
+					  <a href="#">Link 2</a>
+					  <a href="#">Link 3</a>
+					</div>
+					</li>
+					<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">Sorting</a>
+					<div class="dropdown-content">
+					  <a href="#">Link 1</a>
+					  <a href="#">Link 2</a>
+					  <a href="#">Link 3</a>
+					</div>
+					</li>
+					<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">Basic graphs</a>
+					<div class="dropdown-content">
+					  <a href="#">Link 1</a>
+					  <a href="#">Link 2</a>
+					  <a href="#">Link 3</a>
+					</div>
+					</li>
+			</ul>
+			</nav>
+
+		<div id="preamble">
+			<h3><span>INTRODUCTION</span></h3>
+			<p class="p1"><span>Data Structures are the programmatic way of storing data so that data can be used efficiently. Almost every enterprise application uses various types of data structures in one or the other way.  Data structures have gained significant importance because of their usage in several disciplines. Data structures are integral part of modern operating systems, compilers, database Management systems, data communications and so on
+Algorithm is a step-by-step procedure, which defines a set of instructions to be executed in a certain order to get the desired output. Algorithms are generally created independent of underlying languages, i.e. an algorithm can be implemented in more than one programming language.
+Examples of data structure include Arrays, stack, queues, linked lists, hash tables e.t.c which are used to store data in an organized way such that it can be used efficiently.
+Examples of algorithms may include searching algorithms, sorting algorithms, divide and conquer, back tracking, greedy algorithms e.t.c which can operate on the data structures in order to produce results.
+Algorithms together with data structures have wide spread  use in several applications. These include: image processing, digital signal processing, simulation, numerical computations, cryptography, data compressions and genetic studies.
+This means that data structure and algorithms are closely related. The data structure you choose directly affect the algorithm that will be used and vice versa.</span></p>
+		</div>
+	</div>
+
+	<div id="supportingText">
+		<div id="explanation">
+			<h3><span>Algorithm + Data structure = Program</span></h3>
+			<p class="p1"><span><img src="{% static "images/Capture.JPG" %}" alt="Data structures and algorithms" width="500"/></span></p>
+			<p class="p2"><span></span></p>
+		</div>
+
+		<div id="participation">
+			<h3><span>Why study data structures and Algorithms</span></h3>
+			<p class="p1"><span>Understanding data structures and algorithms might seem unnecessary in an age where you'll be using library functions for 90% of your coding. Why then should you bother to learn the implementation, when the implementation is hidden from you behind an abstraction?
+                You must learn data structures and algorithms, so that you understand the logic behind the behaviour of these abstractions. If you don't, you will eventually apply them in a way that will hurt you.
+     Understanding algorithms lets you understand the problems those algorithms were built to overcome. That understanding will help you immensely in your dat-to-day Work, because those problems are basic logic and computer science problems that pop up everywhere, no matter if you're working on business software, hardware drivers, games or mobile apps.
+    We also need to tell why certain algorithms that do solve similar/same problem may be better than the other in terms of speed and space utilization
+In simple terms programs are comprised of two things:  data and algorithms.  The algorithms describe the way the data is to be transformed.  The reason for learning about data structures is because adding structure to our data can make the algorithms much simpler, easier to maintain, and often faster.</span></p>
+		</div>
+
+		<div id="benefits">
+			<h3><span>SUMMARY</span></h3>
+			<p class="p1"><ul>
+            <li>Provide abstraction</li>
+            <li>Handling of real-world data storage</li>
+            <li>Programmer’s tools</li>
+            <li>Modeling of real-world objects and concepts</li>
+            <li>Programs more readable, understandable, maintainable</li>
+            <li>If you have a good feeling for them, you are a better programmer!
+                ,You can solve the problem faster
+                ,Your program works better, with fewer bugs
+                ,You will know when you have been given an impossible task.</li></ul>
+        </div>
+
+		<div id="footer">
+            Copyright © 2017 Group
+		</div>
+
+	</div>
+
+
+	<div id="linkList">
+		<div id="linkList2">
+			<div id="lselect">
+				<ul>
+					{% for slides in all_topics%}
+					<li><a href="/DataStructuresAndAlgorithms/{{slides.id}}/">{{slides.topic}}</a></li>
+					{%endfor%}
+				</ul>
+			</div>
+
+			<div id="larchives">
+				<h3 class="archives"><span>Links</span></h3>
+				<ul>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
