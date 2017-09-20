@@ -11,4 +11,7 @@ class Slides(models.Model):
     slides = models.ForeignKey(Topics, on_delete = models.CASCADE)
     file_type = models.CharField(max_length =10)
     file_name = models.CharField(max_length = 250)
+
+    def __str__(self):
+        return self.file_name
     

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+
+{% load staticfiles %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Data Structures and Algorithms</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'style.css' %}" />
+</head>
+<body>
+<div id="container">
+	<div id="intro">
+		<div id="pageHeader">
+			<h1><span style="padding-right:10px;">Data Structures and Algorithms</span></h1>
+		</div>
+			<nav id ="top_menu">
+			<ul>
+					<li><a href="/DataStructuresAndAlgorithms/">Home</a></li>
+					<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">Basic datastructures</a>
+					<div class="dropdown-content">
+					  <a href="/DataStructuresAndAlgorithms/arrays/">Arrays</a>
+					  <a href="/DataStructuresAndAlgorithms/queues/">Queues</a>
+					  <a href="/DataStructuresAndAlgorithms/stacks/">Stacks</a>
+					</div>
+					</li>
+					<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">Other datastructures</a>
+					<div class="dropdown-content">
+					  <a href="#">Linked lists</a>
+					  <a href="#">priority Queues</a>
+					  <a href="#">heaps</a>
+					</div>
+					</li>
+					<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">Trees</a>
+					</li>
+					<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">Sorting</a>
+					</li>
+					<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">Basic graphs</a>
+					</li>
+			</ul>
+			</nav>
+
+		
+
+		<div id="footer">
+            Copyright © 2017 Group
+		</div>
+
+	</div>
+</div>
+</body>
+</html>
